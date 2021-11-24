@@ -4,9 +4,20 @@ class Person:
         self.__name = name
         self.__age = age
 
+        self.__last_name = None
+
     @property
     def name(self) -> str:
-        return self.__name
+        values = self.__name.split(' ')
+
+        if len(values) > 1:
+            self.__last_name = values[-1]
+
+        return values[0]
+
+    @property
+    def last_name(self) -> str:
+        return self.__last_name
 
     @property
     def age(self) -> int:
@@ -19,4 +30,4 @@ class Person:
         }
 
     def __str__(self) -> str:
-        return f'Name: {self.name} | Age: {self.age}'
+        return f'Name: {self.__name} | Age: {self.__age}'
