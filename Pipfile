@@ -6,6 +6,11 @@ name = "pypi"
 [packages]
 pytest = "*"
 requests = "*"
+pandas = "*"
+coverage = "*"
+pytest-cov = "*"
+pytest-testdox = "*"
+mock = "*"
 
 [dev-packages]
 
