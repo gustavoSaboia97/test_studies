@@ -12,5 +12,11 @@ class Person:
     def age(self) -> int:
         return self.__age
 
+    def to_dict(self) -> dict:
+        return {
+            'name': self.__name,
+            'age': self.__age,
+        }
+
     def __str__(self) -> str:
         return f'Name: {self.name} | Age: {self.age}'

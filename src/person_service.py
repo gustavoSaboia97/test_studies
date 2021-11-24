@@ -8,7 +8,7 @@ class PersonService:
     def __init__(self) -> None:
         self.__csv_path = './person.csv'
 
-    def create_person_by_csv_file(self) -> list:
+    def get_person_by_csv_file(self) -> list:
         person_df = self._read_person_csv()
         created_persons = []
 

@@ -11,6 +11,8 @@ coverage = "*"
 pytest-cov = "*"
 pytest-testdox = "*"
 mock = "*"
+flask = "*"
+selenium = "*"
 
 [dev-packages]
 

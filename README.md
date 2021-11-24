@@ -9,4 +9,7 @@ Este repositório é para o estudo de testes com python
 
 # Iniciar testes de integração
 
+`flask run`
 `pytest tests/integration`
+
+
