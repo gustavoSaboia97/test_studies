@@ -23,11 +23,11 @@ class Student:
 
     @grades.setter
     def grades(self, value):
-        if isinstance(value, List[float]):
+        if isinstance(value, List):
             self.__grades = value
         else:
             raise ValueError(f"Expected a list of floats, but got {type(value)}")
 
     @property
-    def average_grade(self) -> str:
+    def average_grade(self) -> float:
         return sum(self.__grades)/len(self.__grades)
